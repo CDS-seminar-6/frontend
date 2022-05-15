@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import { reset } from 'styled-reset';
 
+import { theme } from './theme';
+
 const GlobalStyle = createGlobalStyle`
   ${reset}
 
@@ -12,6 +14,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     font-size: 62.5%;
     font-family: "SF Pro Display";
+  }
+
+  #root{
+    background-color: ${theme.colors.surfit_black_2};
   }
 
   * {

@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
 
-function Main() {
+function Profile() {
   return (
     <StyledRoot>
-      <p>남준 세영 방가방가 ✋</p>
+      <p>메인페이지</p>
     </StyledRoot>
   );
 }
 
-export default Main;
+export default Profile;
 
 const StyledRoot = styled.main`
   display: flex;
