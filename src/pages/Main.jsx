@@ -1,7 +1,5 @@
-import Responsive from 'components/Responsive';
 import React from 'react';
 import styled from 'styled-components';
-import { applyMediaQuery } from 'styles/mediaQuery';
 import { theme } from 'styles/theme';
 
 function Main() {
@@ -22,5 +20,5 @@ const StyledRoot = styled.main`
   font-size: 8rem;
   width: 100%;
   height: 100%;
-  background-color: ${theme.colors.main};
+  background-color: ${theme.colors.surfit_blue};
 `;
