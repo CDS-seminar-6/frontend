@@ -68,7 +68,7 @@
 
 ## 🤙 컨벤션
 
-
+### 커밋 컨벤션
 |   Commit type              | Emoji                                         | Situation |
 |:---------------------------|:----------------------------------------------|:----|
 | Initial commit             | :tada: `:tada:`                               | 따단~~~~~ |
@@ -81,6 +81,15 @@
 | fix lint                       | :shirt: `:shirt:`                             | eslint 에러 수정 | 
 | chore           | :gear:  `:gear:`              | 기능상 변경 없는 수정 | 
 | init           | :construction:  `:construction:`              | 브랜치 첫 커밋 | 
+
+### 코드 컨벤션
+- eslint, prettier사용
+- react-router-dom v.6
+- 변수, 폴더명, 컴포넌트가 아닌 js 파일은 camelCase로 선언
+- 컴포넌트 파일은 UpperCamelCase.jsx로 선언
+- 컴포넌트 크기는 rem, 10px -> 1rem
+- 양 옆 margin auto 사용하기 (모바일 뷰 이므로)
+- 아이콘 확장자 svg
 
 ## 🌳 브랜치 전략
 
