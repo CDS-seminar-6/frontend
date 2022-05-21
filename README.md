@@ -87,6 +87,42 @@
 - 기능 추가 : feat/(기능이름)
 - 버그 수정 : fix/(버그 명세)
 
+## 🤝 역할 분배
+
+<table>
+    <tr align="center">
+        <td>
+           ☀️ 전희선 ☀️
+        </td>
+        <td>
+           알림바 컴포넌트<br>
+           기본 정보 컴포넌트<br>
+           전체 컴포넌트 결합
+        </td>
+    </tr>
+    <tr align="center">
+        <td>
+            👶 김남준 👶
+        </td>
+        <td>
+           네브바 컴포넌트<br>
+           디렉토리 정보 컴포넌트<br>
+           서버 연결<br>
+        </td>
+    </tr>
+    <tr align="center">
+        <td>
+            💜 최세영 💜
+        </td>
+        <td>
+           프로필 컴포넌트<br>
+           드롭다운메뉴 컴포넌트<br>
+           서버 연결<br>
+        </td>
+    </tr>
+</table>
+
+
 ## 👨‍💻 팀원 정보
 <table>
     <tr align="center">
@@ -114,15 +150,15 @@
     </tr>
     <tr align="center">
         <td>
-            희선 <br/>
+            ☀️ <br/>
             Web FE
         </td>
         <td>
-            남준 <br />
+            👶 <br />
             Web FE
         </td>
         <td>
-            세영 <br />
+            💜 <br />
             Web FE
         </td>
     </tr>
