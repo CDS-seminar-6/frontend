@@ -7,7 +7,7 @@ import { theme } from 'styles/theme';
 const NavContainer = styled.ul`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   width: 34.3rem;
   height: 3.2rem;
@@ -24,23 +24,20 @@ const Img = styled.img`
 const Logo = styled(Img)`
   border: 1.5px solid white;
   border-radius: 10rem;
-  rotate: 0.04deg;
   margin-right: 0.9rem;
+  rotate: 0.04deg;
 `;
 const Profile = styled(Img)`
   margin-left: 1.85rem;
 `;
 
-const SelectedCategory = styled.text`
-  font-weight: bold;
-  color: ${theme.colors.surfit_white};
-`;
+const SeletedCategory = styled.text``;
 
 function Navbar() {
   return (
     <NavContainer>
       <Logo src={logo} />
-      <SelectedCategory className="HomeFeed">홈 피드</SelectedCategory>
+      <li className="HomeFeed">홈 피드</li>
       <li className="Directory">디렉토리</li>
       <li className="recruiting">채용</li>
       <li className="CareerManage">커리어 관리</li>

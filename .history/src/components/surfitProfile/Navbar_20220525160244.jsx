@@ -25,10 +25,10 @@ const Logo = styled(Img)`
   border: 1.5px solid white;
   border-radius: 10rem;
   rotate: 0.04deg;
-  margin-right: 0.9rem;
+  margin-right: 1rem;
 `;
 const Profile = styled(Img)`
-  margin-left: 1.85rem;
+  margin-left: 1.9rem;
 `;
 
 const SelectedCategory = styled.text`

@@ -28,7 +28,7 @@ const Logo = styled(Img)`
   margin-right: 0.9rem;
 `;
 const Profile = styled(Img)`
-  margin-left: 1.85rem;
+  margin-left: 1.9rem;
 `;
 
 const SelectedCategory = styled.text`

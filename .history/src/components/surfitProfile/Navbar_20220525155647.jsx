@@ -7,7 +7,7 @@ import { theme } from 'styles/theme';
 const NavContainer = styled.ul`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   width: 34.3rem;
   height: 3.2rem;
@@ -25,10 +25,9 @@ const Logo = styled(Img)`
   border: 1.5px solid white;
   border-radius: 10rem;
   rotate: 0.04deg;
-  margin-right: 0.9rem;
 `;
 const Profile = styled(Img)`
-  margin-left: 1.85rem;
+  margin-left: 3.9rem;
 `;
 
 const SelectedCategory = styled.text`
