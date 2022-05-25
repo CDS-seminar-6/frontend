@@ -1,4 +1,3 @@
-import DirectoryInfo from 'components/surfitProfile/DirectoryInfo';
 import Navbar from 'components/surfitProfile/Navbar';
 import React from 'react';
 import styled from 'styled-components';
