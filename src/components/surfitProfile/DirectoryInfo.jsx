@@ -1,4 +1,4 @@
-import write from 'assets/icon_writng.svg';
+import write from 'assets/icon_edit.svg';
 import profilePic from 'assets/mockup_profile.svg';
 import { React } from 'react';
 import styled from 'styled-components';
@@ -32,8 +32,29 @@ const HeaderUnderline = styled.hr`
   border: 1px solid ${theme.colors.surfit_black_3};
 `;
 
-const Profile = styled.div``;
-const ProfileWrapper = styled.div``;
+const ProfileWrapper = styled.div`
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  margin: 1rem 0 auto;
+`;
+
+const Profile = styled.img`
+  width: 100%;
+  position: absolute;
+  filter: brightness(50%);
+`;
+
+const ImgEdit = styled.button`
+  position: absolute;
+  width: 4.8rem;
+  height: 4.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 20rem;
+`;
 
 function DirectoryInfo() {
   return (
@@ -43,7 +64,12 @@ function DirectoryInfo() {
       <HeaderUnderline />
       <Title>내정보</Title>
       <Contents>프로필 사진</Contents>
-      <ProfileWrapper />
+      <ProfileWrapper>
+        <Profile src={profilePic} alt="프로필 사진" />
+        <ImgEdit type="submit">
+          <img src={write} alt="버튼" />
+        </ImgEdit>
+      </ProfileWrapper>
       <Contents>이름</Contents>
       <Contents>한 줄 소개</Contents>
     </InfoContainer>
