@@ -1,7 +1,5 @@
 import Navbar from 'components/surfitProfile/Navbar';
 import React from 'react';
-import styled from 'styled-components';
-import { theme } from 'styles/theme';
 
 function SurfitProfile() {
   return (
@@ -21,5 +19,5 @@ const StyledRoot = styled.main`
   font-size: 8rem;
   width: 100%;
   height: 100%;
-  background-color: ${theme.colors.surfit_black_1};
+  background-color: ${theme.colors.surfit_black_2};
 `;
