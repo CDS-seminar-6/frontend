@@ -16,29 +16,23 @@ const NavContainer = styled.ul`
   margin: 5.2rem 0 auto;
 `;
 
-const Img = styled.img`
+const LogoImg = styled.img`
   width: 3.2rem;
   height: 3.2rem;
 `;
 
-const Logo = styled(Img)`
-  border: 1.5px solid white;
-  border-radius: 10rem;
-  margin-right: 0.9rem;
-  rotate: 0.04deg;
-`;
-const Profile = styled(Img)`
-  margin-left: 1.85rem;
+const Profile = styled(LogoImg)`
+  flex-grow: 1.5;
 `;
 
 function Navbar() {
   return (
     <NavContainer>
-      <Logo src={logo} />
-      <li className="HomeFeed">홈 피드</li>
-      <li className="Directory">디렉토리</li>
-      <li className="recruiting">채용</li>
-      <li className="CareerManage">커리어 관리</li>
+      <LogoImg src={logo} />
+      <li>홈 피드</li>
+      <li>디렉토리</li>
+      <li>채용</li>
+      <li>커리어 관리</li>
       <Profile src={profilePic} />
     </NavContainer>
   );

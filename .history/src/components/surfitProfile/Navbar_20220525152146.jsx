@@ -7,39 +7,29 @@ import { theme } from 'styles/theme';
 const NavContainer = styled.ul`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  align-content: center;
   list-style: none;
   width: 34.3rem;
   height: 3.2rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: ${theme.colors.surfit_grey_3};
   margin: 5.2rem 0 auto;
 `;
 
-const Img = styled.img`
+const LogoAndProfile = styled.img`
   width: 3.2rem;
   height: 3.2rem;
-`;
-
-const Logo = styled(Img)`
-  border: 1.5px solid white;
-  border-radius: 10rem;
-  margin-right: 0.9rem;
-  rotate: 0.04deg;
-`;
-const Profile = styled(Img)`
-  margin-left: 1.85rem;
 `;
 
 function Navbar() {
   return (
     <NavContainer>
-      <Logo src={logo} />
-      <li className="HomeFeed">홈 피드</li>
-      <li className="Directory">디렉토리</li>
-      <li className="recruiting">채용</li>
-      <li className="CareerManage">커리어 관리</li>
-      <Profile src={profilePic} />
+      <LogoAndProfile src={logo} />
+      <li>홈 피드</li>
+      <li>디렉토리</li>
+      <li>채용</li>
+      <li>커리어 관리</li>
+      <LogoAndProfile src={profilePic} />
     </NavContainer>
   );
 }

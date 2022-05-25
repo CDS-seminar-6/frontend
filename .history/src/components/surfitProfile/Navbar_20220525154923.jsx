@@ -38,7 +38,7 @@ function Navbar() {
       <li className="HomeFeed">홈 피드</li>
       <li className="Directory">디렉토리</li>
       <li className="recruiting">채용</li>
-      <li className="CareerManage">커리어 관리</li>
+      <li>커리어 관리</li>
       <Profile src={profilePic} />
     </NavContainer>
   );

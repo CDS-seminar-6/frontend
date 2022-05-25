@@ -22,23 +22,21 @@ const Img = styled.img`
 `;
 
 const Logo = styled(Img)`
-  border: 1.5px solid white;
+  border: 2px solid white;
   border-radius: 10rem;
-  margin-right: 0.9rem;
-  rotate: 0.04deg;
 `;
 const Profile = styled(Img)`
-  margin-left: 1.85rem;
+  margin-left: 20px;
 `;
 
 function Navbar() {
   return (
     <NavContainer>
       <Logo src={logo} />
-      <li className="HomeFeed">홈 피드</li>
-      <li className="Directory">디렉토리</li>
-      <li className="recruiting">채용</li>
-      <li className="CareerManage">커리어 관리</li>
+      <li>홈 피드</li>
+      <li>디렉토리</li>
+      <li>채용</li>
+      <li>커리어 관리</li>
       <Profile src={profilePic} />
     </NavContainer>
   );
