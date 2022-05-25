@@ -8,27 +8,16 @@ const InfoContainer = styled.div`
   margin: 89.3rem 0 auto;
   width: 37.6rem;
   height: 75.2rem;
-  padding-left: 1.6rem;
 `;
 
-const Title = styled.h1`
+const Title = stlyed.h1`
   font-size: 1.6rem;
-  font-weight: bold;
-  color: ${theme.colors.surfit_white};
-  margin: 2.4rem 0 auto;
-`;
-
-const Contents = styled.p`
-  font-size: 1.6rem;
-  color: ${theme.colors.surfit_grey_2};
-  margin: 2rem 0 auto;
 `;
 
 function DirectoryInfo() {
   return (
     <InfoContainer>
-      <Title>디렉토리 정보</Title>
-      <Contents>서핏에서 다양한 커리어 기회를 발견해보세요</Contents>
+      <div>안녕하세요</div>
     </InfoContainer>
   );
 }

@@ -8,7 +8,6 @@ const InfoContainer = styled.div`
   margin: 89.3rem 0 auto;
   width: 37.6rem;
   height: 75.2rem;
-  padding-left: 1.6rem;
 `;
 
 const Title = styled.h1`

@@ -8,7 +8,6 @@ const InfoContainer = styled.div`
   margin: 89.3rem 0 auto;
   width: 37.6rem;
   height: 75.2rem;
-  padding-left: 1.6rem;
 `;
 
 const Title = styled.h1`
@@ -16,6 +15,7 @@ const Title = styled.h1`
   font-weight: bold;
   color: ${theme.colors.surfit_white};
   margin: 2.4rem 0 auto;
+  padding-left: 1.6rem;
 `;
 
 const Contents = styled.p`
