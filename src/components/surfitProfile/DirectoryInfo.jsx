@@ -1,3 +1,5 @@
+import write from 'assets/icon_writng.svg';
+import profilePic from 'assets/mockup_profile.svg';
 import { React } from 'react';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
@@ -24,11 +26,26 @@ const Contents = styled.p`
   margin: 2rem 0 auto;
 `;
 
+const HeaderUnderline = styled.hr`
+  width: 34.3rem;
+  margin: 1.6rem 0 auto;
+  border: 1px solid ${theme.colors.surfit_black_3};
+`;
+
+const Profile = styled.div``;
+const ProfileWrapper = styled.div``;
+
 function DirectoryInfo() {
   return (
     <InfoContainer>
       <Title>디렉토리 정보</Title>
       <Contents>서핏에서 다양한 커리어 기회를 발견해보세요</Contents>
+      <HeaderUnderline />
+      <Title>내정보</Title>
+      <Contents>프로필 사진</Contents>
+      <ProfileWrapper />
+      <Contents>이름</Contents>
+      <Contents>한 줄 소개</Contents>
     </InfoContainer>
   );
 }
