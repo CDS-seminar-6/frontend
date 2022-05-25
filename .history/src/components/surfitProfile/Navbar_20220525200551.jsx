@@ -35,7 +35,7 @@ const Category = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 3.04rem;
 `;
 
 const SelectedCategory = styled.text`

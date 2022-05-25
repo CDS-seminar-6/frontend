@@ -6,10 +6,10 @@ import { theme } from 'styles/theme';
 
 const NavContainer = styled.ul`
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
   list-style: none;
-  width: 100%;
-  padding: 0 1.6rem;
+  width: 34.3rem;
   height: 3.2rem;
   font-size: 1.4rem;
   color: ${theme.colors.surfit_grey_3};
@@ -23,36 +23,27 @@ const Img = styled.img`
 
 const Logo = styled(Img)`
   border: 1.5px solid ${theme.colors.surfit_white};
-  border-radius: 50%;
+  border-radius: 10rem;
   rotate: 0.04deg;
-  margin-right: 0.6rem;
+  margin-right: 0.9rem;
 `;
 const Profile = styled(Img)`
-  margin-left: 3.9rem;
-`;
-
-const Category = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  margin-left: 1.85rem;
 `;
 
 const SelectedCategory = styled.text`
-  font-weight: 600;
+  font-weight: bold;
   color: ${theme.colors.surfit_white};
 `;
 
 function Navbar() {
   return (
     <NavContainer>
-      <Category>
-        <Logo src={logo} />
-        <SelectedCategory>홈 피드</SelectedCategory>
-        <li>디렉토리</li>
-        <li>채용</li>
-        <li>커리어 관리</li>
-      </Category>
+      <Logo src={logo} />
+      <SelectedCategory>홈 피드</SelectedCategory>
+      <li>디렉토리</li>
+      <li>채용</li>
+      <li>커리어 관리</li>
       <Profile src={profilePic} />
     </NavContainer>
   );
