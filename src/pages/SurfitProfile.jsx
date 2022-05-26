@@ -1,5 +1,4 @@
-import DropDownBtn from 'components/surfitProfile/DropDownBtn';
-import DropDownMenu from 'components/surfitProfile/DropDownMenu';
+import DropDown from 'components/surfitProfile/DropDown';
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
@@ -7,8 +6,7 @@ function SurfitProfile() {
   return (
     <StyledRoot>
       서핏프로필
-      <DropDownBtn />
-      <DropDownMenu />
+      <DropDown />
     </StyledRoot>
   );
 }
