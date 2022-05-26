@@ -24,8 +24,7 @@ const StyledRoot = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
-  max-width: 34.3rem;
+  width: 34.3rem;
   height: 18.6rem;
   background-color: ${theme.colors.surfit_black_2};
   border-radius: 12px;

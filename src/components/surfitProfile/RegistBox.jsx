@@ -1,6 +1,6 @@
 import checkIC from 'assets/icon_check.svg';
 import crownIC from 'assets/icon_crown.svg';
-import writingIC from 'assets/icon_writng.svg';
+import writingIC from 'assets/icon_writing.svg';
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
@@ -38,8 +38,8 @@ const StyledRoot = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
-  max-width: 34.3rem;
+  margin-top: 2rem;
+  width: 34.3rem;
   height: 18.6rem;
   background-color: ${theme.colors.surfit_black_2};
   border-radius: 12px;

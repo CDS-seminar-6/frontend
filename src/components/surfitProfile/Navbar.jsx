@@ -13,7 +13,7 @@ const NavContainer = styled.ul`
   height: 3.2rem;
   font-size: 1.4rem;
   color: ${theme.colors.surfit_grey_3};
-  margin: 5.2rem 0 auto;
+  margin-top: 0.8rem;
 `;
 
 const Img = styled.img`

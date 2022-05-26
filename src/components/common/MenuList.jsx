@@ -33,10 +33,9 @@ const MenuContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1.6rem;
 `;
 const MenuBtn = styled.button`
-  width: 34.3rem;
+  width: 100%;
   height: 5rem;
   margin-bottom: 1rem;
   padding: 0;
@@ -49,6 +48,5 @@ const MenuBtn = styled.button`
   align-items: center;
 `;
 const MenuIcon = styled.img`
-  margin-left: 1.2rem;
   margin-right: 0.8rem;
 `;

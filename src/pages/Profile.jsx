@@ -9,7 +9,9 @@ function Profile() {
     <StyledRoot>
       <AlarmBar />
       <ProfileContainer />
-      <MenuList />
+      <MenuListWrapper>
+        <MenuList />
+      </MenuListWrapper>
     </StyledRoot>
   );
 }
@@ -21,6 +23,10 @@ const StyledRoot = styled.main`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
   background-color: ${theme.colors.surfit_black_2};
+`;
+
+const MenuListWrapper = styled.div`
+  width: 100%;
+  padding: 0 2.8rem;
 `;
