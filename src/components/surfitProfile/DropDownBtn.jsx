@@ -4,8 +4,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
 function DropDownBtn() {
+  const BtnClick = () => {};
   return (
-    <StyledBtn>
+    <StyledBtn onClick={() => BtnClick()}>
       <span>서핏 프로필</span>
       <StyledIcon src={arrow_down} alt="드롭다운 버튼 이미지" />
     </StyledBtn>
