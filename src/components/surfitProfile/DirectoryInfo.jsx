@@ -5,10 +5,11 @@ import styled from 'styled-components';
 import { theme } from 'styles/theme';
 
 const InfoContainer = styled.div`
-  position: absolute;
+  display: flex;
+  flex-direction: column;
   background-color: ${theme.colors.surfit_black_2};
   margin: 89.3rem 0 auto;
-  width: 37.6rem;
+  width: 100%;
   height: 75.2rem;
   padding-left: 1.6rem;
 `;
@@ -60,7 +61,7 @@ const Input = styled.input`
   background-color: ${theme.colors.surfit_black_3};
   border: none;
   border-radius: 1.2rem;
-  margin: 0 auto;
+  margin-top: 1rem;
   padding-left: 1.8rem;
   width: 34.3rem;
   height: 6.3rem;
@@ -68,17 +69,9 @@ const Input = styled.input`
   font-size: 1.4rem;
 `;
 
-const Introduction = styled.textarea`
-  background-color: ${theme.colors.surfit_black_3};
-  border: none;
-  border-radius: 1.2rem;
-  margin: 1rem 0 auto;
-  padding-left: 1.8rem;
+const Introduction = styled(Input)`
   padding-top: 2.3rem;
-  width: 34.3rem;
   height: 12.4rem;
-  color: ${theme.colors.surfit_white};
-  font-size: 1.4rem;
   resize: none;
 `;
 
@@ -97,9 +90,9 @@ function DirectoryInfo() {
         </ImgEdit>
       </ProfileWrapper>
       <Contents>이름</Contents>
-      <Input placeholder="최인영" />
+      <Input placeholder="이름을 입력해주세요" />
       <Contents>한 줄 소개</Contents>
-      <Introduction placeholder="한줄소개를 입력해주세요(50자 이내)" />
+      <Introduction as={'textarea'} placeholder="한줄소개를 입력해주세요(50자 이내)" />
     </InfoContainer>
   );
 }
