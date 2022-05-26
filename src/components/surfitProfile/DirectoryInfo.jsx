@@ -66,6 +66,7 @@ const Input = styled.input`
   height: 6.3rem;
   color: ${theme.colors.surfit_white};
   font-size: 1.4rem;
+  outline: 0;
 `;
 
 const Introduction = styled(Input)`
