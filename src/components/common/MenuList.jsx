@@ -2,13 +2,16 @@ import bag from 'assets/icon_bag.svg';
 import setting from 'assets/icon_setting.svg';
 import surfing from 'assets/icon_surfing.svg';
 import { React } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
 
 function MenuList() {
+  const navigate = useNavigate();
+
   return (
     <MenuContainer>
-      <MenuBtn>
+      <MenuBtn onClick={() => navigate('/profile')}>
         <MenuIcon src={surfing} alt="서핏프로필 아이콘" />
         서핏 프로필
       </MenuBtn>
