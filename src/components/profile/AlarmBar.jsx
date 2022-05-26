@@ -22,4 +22,6 @@ const StyledRoot = styled.div`
   width: 100%;
   padding-right: 1.6rem;
   gap: 1.2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 3.2rem;
 `;

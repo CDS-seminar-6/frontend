@@ -32,19 +32,17 @@ const ProfileInfo = styled.div`
   width: 28.3rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-left: 1.2rem;
   gap: 0.6rem;
+
   & > span {
-    font-family: 'SF Pro Text';
-    font-style: normal;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.9rem;
     color: ${theme.colors.surfit_white};
   }
   & > div {
-    font-family: 'SF Pro Text';
-    font-style: normal;
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.7rem;
@@ -52,19 +50,18 @@ const ProfileInfo = styled.div`
   }
 `;
 const PlusBtn = styled.button`
+  display: flex;
+  align-items: center;
   width: 34.3rem;
   height: 5rem;
-  font-style: normal;
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 1.9rem;
-  background: none;
+  background-color: ${theme.colors.surfit_black_2};
   margin-top: 2.6rem;
-  padding-left: 1.468rem;
+  padding-left: 1.2rem;
   color: ${theme.colors.surfit_white};
-  display: flex;
-  gap: 1.068rem;
-  align-items: center;
+  gap: 0.8rem;
   border: 1px solid ${theme.colors.surfit_grey_1};
-  border-radius: 0.6rem;
+  border-radius: 6px;
 `;

@@ -30,6 +30,7 @@ const MenuContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1.6rem;
 `;
 const MenuBtn = styled.button`
   width: 34.3rem;
@@ -38,13 +39,13 @@ const MenuBtn = styled.button`
   padding: 0;
   font-size: 1.6rem;
   font-weight: bold;
-  border: none;
+  border: 0;
   background: none;
   color: ${theme.colors.surfit_white};
   display: flex;
   align-items: center;
 `;
 const MenuIcon = styled.img`
-  display: inline-block;
-  margin: 1.3rem 0.8rem 1.3rem 1.2rem;
+  margin-left: 1.2rem;
+  margin-right: 0.8rem;
 `;
