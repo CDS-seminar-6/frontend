@@ -1,11 +1,12 @@
+import MenuList from 'components/common/MenuList';
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
-
 function Profile() {
   return (
     <StyledRoot>
       <p>메인페이지</p>
+      <MenuList />
     </StyledRoot>
   );
 }
