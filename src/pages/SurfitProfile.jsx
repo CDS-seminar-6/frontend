@@ -1,7 +1,7 @@
 import React from 'react';
 
 function SurfitProfile() {
-  return <div>서핏프로필</div>;
+  return <></>;
 }
 
 export default SurfitProfile;
