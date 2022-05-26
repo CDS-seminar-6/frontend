@@ -64,4 +64,5 @@ const PlusBtn = styled.button`
   gap: 0.8rem;
   border: 1px solid ${theme.colors.surfit_grey_1};
   border-radius: 6px;
+  margin-bottom: 1.6rem;
 `;
