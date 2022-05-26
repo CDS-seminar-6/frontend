@@ -26,10 +26,10 @@ function MenuList() {
 export default MenuList;
 
 const MenuContainer = styled.div`
-  width: 34.3rem;
-  margin: 1.6rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 const MenuBtn = styled.button`
   width: 34.3rem;
