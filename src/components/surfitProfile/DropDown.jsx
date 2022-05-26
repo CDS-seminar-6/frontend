@@ -89,12 +89,11 @@ const StyledModal = styled.div`
   border-radius: 12px;
   border: none;
   background: ${theme.colors.surfit_black_2};
-  padding: 0 2.4rem;
 
   & > span {
     font-weight: 600;
     font-size: 1.6rem;
     color: ${theme.colors.surfit_white};
-    margin: 2.8rem 0 2rem;
+    margin: 2.8rem 2.4rem 2rem;
   }
 `;
