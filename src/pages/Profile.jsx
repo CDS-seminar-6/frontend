@@ -21,5 +21,6 @@ const StyledRoot = styled.main`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  min-height: 100%;
   background-color: ${theme.colors.surfit_black_2};
 `;

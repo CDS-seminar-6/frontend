@@ -14,11 +14,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     font-size: 62.5%;
     font-family: "SF Pro Text";
+    background-color: ${theme.colors.surfit_black_1};
   }
 
-  #root{
-    background-color: ${theme.colors.surfit_black_2};
-  }
 
   * {
     box-sizing: border-box;
