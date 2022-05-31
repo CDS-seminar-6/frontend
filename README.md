@@ -10,61 +10,43 @@
 6. styled-reset
 8. +etc
 
-<!-- ## 📂 디렉토리 구조
+## 📂 디렉토리 구조
 
-변경될 수 있습니다 ~ !
-
-```bash
+```
 // src directory structure
 ├── App.jsx
-├── Assets
-│   ├── icon
-│   └── img
-├── Components
-│   ├── Comment
-│   │   ├── CommentHandler.jsx
-│   │   ├── CommentList.jsx
-│   │   ├── CommentToggleButton.jsx
-│   │   └── index.jsx
-│   ├── Common
-│   │   ├── FilterBar.jsx
-│   │   └── NavBar.jsx
+├── assets
+│   ├── icon_alarm.svg
+│   ├── etc...
+├── components
 │   ├── Responsive.jsx
-│   ├── SideBar.jsx
-│   └── Video
-│       ├── ChannelInfo.jsx
-│       ├── VideoContainer.jsx
-│       ├── VideoIcons.jsx
-│       ├── VideoInfo.jsx
-│       ├── VideoProgressBar.jsx
-│       ├── VideoRuntime.jsx
-│       ├── VideoTag.jsx
-│       ├── VideoTitle.jsx
-│       └── index.jsx
-├── Constants
-│   ├── colors.js
+│   ├── common
+│   │   └── MenuList.jsx
+│   ├── profile
+│   │   ├── AlarmBar.jsx
+│   │   └── ProfileContainer.jsx
+│   └── surfitProfile
+│       ├── ArticleBox.jsx
+│       ├── DirectoryInfo.jsx
+│       ├── DropDown.jsx
+│       ├── Navbar.jsx
+│       └── RegistBox.jsx
+├── constants
 │   └── deviceInfo.js
-├── Cores
-│   ├── Contexts
-│   │   └── index.js
-│   ├── Hooks
-│   │   ├── useAPI.jsx
-│   │   ├── useDarkmode.jsx
-│   │   └── useVideoInfo.jsx
+├── cores
 │   ├── api.js
+│   ├── hooks
+│   │   └── useAPI.js
 │   └── router.jsx
-├── Pages
-│   ├── MainPage.jsx
-│   ├── NotFound.jsx
-│   └── VideoPage.jsx
-├── Style
-│   ├── DarkModeProvider.jsx
-│   ├── globalStyle.js
-│   └── mediaQuery.js
-├── Utils
-│   └── shortenNumber.js
-├── index.js
-```  -->
+├── index.jsx
+├── pages
+│   ├── Profile.jsx
+│   └── SurfitProfile.jsx
+└── styles
+    ├── globalStyle.js
+    ├── mediaQuery.js
+    └── theme.js
+```
 
 ## 🤙 컨벤션
 
