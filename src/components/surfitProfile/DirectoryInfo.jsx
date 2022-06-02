@@ -2,6 +2,7 @@ import write from 'assets/icon_edit.svg';
 import profilePic from 'assets/img_profile_big.svg';
 import useAPI from 'cores/hooks/useAPI';
 import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
 
@@ -120,12 +121,14 @@ function DirectoryInfo() {
       <Input type="text" placeholder="이름을 입력해주세요" ref={nameRef} />
       <Contents>한 줄 소개</Contents>
       <Introduction as={'textarea'} placeholder="한줄소개를 입력해주세요(50자 이내)" ref={introRef} />
-      <StyledSubmitBtn
-        onClick={() => {
-          result;
-        }}>
-        프로필 저장
-      </StyledSubmitBtn>
+      <Link to="/">
+        <StyledSubmitBtn
+          onClick={() => {
+            result;
+          }}>
+          프로필 저장
+        </StyledSubmitBtn>
+      </Link>
     </InfoContainer>
   );
 }
