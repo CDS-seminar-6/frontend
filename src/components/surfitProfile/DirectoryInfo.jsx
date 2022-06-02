@@ -94,7 +94,6 @@ const StyledSubmitBtn = styled.button`
 function DirectoryInfo() {
   const nameRef = useRef('');
   const introRef = useRef('');
-
   const result = useAPI({
     method: 'post',
     url: '/profile/6290810aafae9f02409bdf47',
