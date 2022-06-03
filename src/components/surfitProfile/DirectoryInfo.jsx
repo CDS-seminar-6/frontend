@@ -1,7 +1,9 @@
 import write from 'assets/icon_edit.svg';
 import profilePic from 'assets/img_profile_big.svg';
 import { client } from 'cores/api';
-import React, { useRef } from 'react';
+import useAPI from 'cores/hooks/useAPI';
+import useInput from 'cores/useInput';
+import React, { useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
@@ -92,18 +94,29 @@ const StyledSubmitBtn = styled.button`
 `;
 
 function DirectoryInfo() {
-  const nameRef = useRef('');
-  const introRef = useRef('');
+  const { handleValue: handleName, ...name } = useInput();
+  const { handleValue: handleIntro, ...intro } = useInput();
   const navigate = useNavigate();
+
+  const { data } = useAPI({
+    method: 'get',
+    url: `/profile/6290810aafae9f02409bdf47`,
+  });
+
+  useEffect(() => {
+    handleName(data && data.name);
+    handleIntro(data && data.intro_message);
+  }, [data]);
 
   const handleSubmit = async () => {
     await client.post('/profile/6290810aafae9f02409bdf47', {
-      name: nameRef.current.value,
-      intro_message: introRef.current.value,
+      name: name.value,
+      intro_message: intro.value,
     });
 
     navigate('/');
   };
+
   return (
     <InfoContainer>
       <Title>디렉토리 정보</Title>
@@ -118,9 +131,9 @@ function DirectoryInfo() {
         </ImgEdit>
       </ProfileWrapper>
       <Contents>이름</Contents>
-      <Input type="text" placeholder="이름을 입력해주세요" ref={nameRef} />
+      <Input type="text" placeholder="이름을 입력해주세요" {...name} />
       <Contents>한 줄 소개</Contents>
-      <Introduction as={'textarea'} placeholder="한줄소개를 입력해주세요(50자 이내)" ref={introRef} />
+      <Introduction as={'textarea'} placeholder="한줄소개를 입력해주세요(50자 이내)" {...intro} />
       <StyledSubmitBtn onClick={handleSubmit}>프로필 저장</StyledSubmitBtn>
     </InfoContainer>
   );
