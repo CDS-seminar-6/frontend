@@ -1,6 +1,8 @@
 import write from 'assets/icon_edit.svg';
 import profilePic from 'assets/img_profile_big.svg';
-import { React } from 'react';
+import useAPI from 'cores/hooks/useAPI';
+import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
 
@@ -90,6 +92,17 @@ const StyledSubmitBtn = styled.button`
 `;
 
 function DirectoryInfo() {
+  const nameRef = useRef('');
+  const introRef = useRef('');
+  const result = useAPI({
+    method: 'post',
+    url: '/profile/6290810aafae9f02409bdf47',
+    data: {
+      name: nameRef.current.value,
+      intro_message: introRef.current.value,
+    },
+  });
+
   return (
     <InfoContainer>
       <Title>디렉토리 정보</Title>
@@ -104,10 +117,17 @@ function DirectoryInfo() {
         </ImgEdit>
       </ProfileWrapper>
       <Contents>이름</Contents>
-      <Input placeholder="이름을 입력해주세요" />
+      <Input type="text" placeholder="이름을 입력해주세요" ref={nameRef} />
       <Contents>한 줄 소개</Contents>
-      <Introduction as={'textarea'} placeholder="한줄소개를 입력해주세요(50자 이내)" />
-      <StyledSubmitBtn>프로필 저장</StyledSubmitBtn>
+      <Introduction as={'textarea'} placeholder="한줄소개를 입력해주세요(50자 이내)" ref={introRef} />
+      <Link to="/">
+        <StyledSubmitBtn
+          onClick={() => {
+            result;
+          }}>
+          프로필 저장
+        </StyledSubmitBtn>
+      </Link>
     </InfoContainer>
   );
 }
