@@ -1,11 +1,11 @@
 import { ReactComponent as IconPlus } from 'assets/icon_plus.svg';
 import { ReactComponent as SVGProfile } from 'assets/img_profile_small.svg';
 import useAPI from 'cores/hooks/useAPI';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
 function ProfileContainer() {
-  const result = useAPI({
+  const { data } = useAPI({
     method: 'get',
     url: `/profile/6290810aafae9f02409bdf47`,
   });
@@ -15,8 +15,8 @@ function ProfileContainer() {
       <ProfileHeader>
         <SVGProfile />
         <ProfileInfo>
-          <span>{result.data.name}</span>
-          <div>{result.data.intro_message || `한 줄 소개를 입력해주세요 (50자 이내)`}</div>
+          <span>{data && data.name}</span>
+          <div>{(data && data.intro_message) || `한 줄 소개를 입력해주세요 (50자 이내)`}</div>
           {/* 한줄 소개 없으면 기본 메세지 출력 */}
         </ProfileInfo>
       </ProfileHeader>
