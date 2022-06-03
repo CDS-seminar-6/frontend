@@ -1,16 +1,23 @@
 import { ReactComponent as IconPlus } from 'assets/icon_plus.svg';
 import { ReactComponent as SVGProfile } from 'assets/img_profile_small.svg';
+import useAPI from 'cores/hooks/useAPI';
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
 function ProfileContainer() {
+  const result = useAPI({
+    method: 'get',
+    url: `/profile/6290810aafae9f02409bdf47`,
+  });
+
   return (
     <>
       <ProfileHeader>
         <SVGProfile />
         <ProfileInfo>
-          <span>최인영</span>
-          <div>한 줄 소개를 입력해주세요 (50자 이내)</div>
+          <span>{result.data.name}</span>
+          <div>{result.data.intro_message || `한 줄 소개를 입력해주세요 (50자 이내)`}</div>
+          {/* 한줄 소개 없으면 기본 메세지 출력 */}
         </ProfileInfo>
       </ProfileHeader>
       <PlusBtn>
