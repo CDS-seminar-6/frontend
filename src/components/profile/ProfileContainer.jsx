@@ -1,7 +1,7 @@
 import { ReactComponent as IconPlus } from 'assets/icon_plus.svg';
 import { ReactComponent as SVGProfile } from 'assets/img_profile_small.svg';
 import useAPI from 'cores/hooks/useAPI';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
 function ProfileContainer() {
