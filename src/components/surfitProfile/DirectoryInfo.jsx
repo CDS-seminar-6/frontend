@@ -1,8 +1,8 @@
 import write from 'assets/icon_edit.svg';
 import profilePic from 'assets/img_profile_big.svg';
-import useAPI from 'cores/hooks/useAPI';
+import { client } from 'cores/api';
 import React, { useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { theme } from 'styles/theme';
 
@@ -94,15 +94,16 @@ const StyledSubmitBtn = styled.button`
 function DirectoryInfo() {
   const nameRef = useRef('');
   const introRef = useRef('');
-  const result = useAPI({
-    method: 'post',
-    url: '/profile/6290810aafae9f02409bdf47',
-    data: {
+  const navigate = useNavigate();
+
+  const handleSubmit = async () => {
+    await client.post('/profile/6290810aafae9f02409bdf47', {
       name: nameRef.current.value,
       intro_message: introRef.current.value,
-    },
-  });
+    });
 
+    navigate('/');
+  };
   return (
     <InfoContainer>
       <Title>디렉토리 정보</Title>
@@ -120,14 +121,7 @@ function DirectoryInfo() {
       <Input type="text" placeholder="이름을 입력해주세요" ref={nameRef} />
       <Contents>한 줄 소개</Contents>
       <Introduction as={'textarea'} placeholder="한줄소개를 입력해주세요(50자 이내)" ref={introRef} />
-      <Link to="/">
-        <StyledSubmitBtn
-          onClick={() => {
-            result;
-          }}>
-          프로필 저장
-        </StyledSubmitBtn>
-      </Link>
+      <StyledSubmitBtn onClick={handleSubmit}>프로필 저장</StyledSubmitBtn>
     </InfoContainer>
   );
 }
