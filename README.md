@@ -1,5 +1,8 @@
 # The-SOPT 합동 세미나 6조 Client-Web
 
+## 🧚구현 결과물
+https://user-images.githubusercontent.com/67372977/171820668-130c8d17-4877-4b54-9381-4a39de6c4e27.mov
+
 ## :gear: 프로젝트 구성
 
 1. React
@@ -33,11 +36,12 @@
 │       └── RegistBox.jsx
 ├── constants
 │   └── deviceInfo.js
-├── cores
-│   ├── api.js
-│   ├── hooks
-│   │   └── useAPI.js
-│   └── router.jsx
+cores
+│   ├── api.js
+│   ├── hooks
+│   │   └── useAPI.js
+│   ├── router.jsx
+│   └── useInput.js
 ├── index.jsx
 ├── pages
 │   ├── Profile.jsx
